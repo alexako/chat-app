@@ -1,0 +1,32 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; }
+form { background: #192879; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+form input {
+  background-color: #e5edf5;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  margin-right: 0.5%;
+}
+form button {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  font-weight: 800;
+  background-color: white;
+}
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }
+
+.connection-indicator { 
+  position: fixed;
+  right: 3px;
+  height: 1em; 
+  width: 1em; 
+  border-radius: 100%; 
+  background-color: red; 
+  box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.59);
+}
+.connected { background-color: #00ff00; }
